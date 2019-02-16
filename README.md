@@ -5,10 +5,17 @@
 ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/face_reco.JPG)
 
 
-## Dataset: [CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+* ## Dataset: [CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
-![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.png)
+  ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.png)
 
+* ## Dependencies
+  - Keras 2 (tensorflow backend)
+  - open-cv
+  - tqdm
+  - pandas
+  
+  
 - [x] Recognize celebrities with trained FaceNet model
 - [x] Find out your Doppelgänger
 - [ ] Beauty test

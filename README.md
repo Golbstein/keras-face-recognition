@@ -17,6 +17,7 @@
 * ## Model
   - Feature extractor model: DenseNet121
   - Embedding model: FaceNet
+  
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/openface.jpg)
 
   

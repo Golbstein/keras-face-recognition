@@ -5,7 +5,7 @@
 
 
 ## Dataset: [CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
-![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.PNG)
+![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.png)
 
 - [x] Recognize celebrities with trained FaceNet model
 - [x] Find out your Doppelgänger

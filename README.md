@@ -10,10 +10,10 @@
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.png)
 
 * ## Dependencies
-  - Keras 2 (tensorflow backend)
-  - open-cv
-  - tqdm
-  - pandas
+  - **Keras 2 (tensorflow backend)
+  - **open-cv
+  - **tqdm
+  - **pandas
   
   
 - [x] Recognize celebrities with trained FaceNet model

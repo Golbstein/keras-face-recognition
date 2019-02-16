@@ -5,7 +5,8 @@
 ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/face_reco.JPG)
 
 
-* ## Dataset: [CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+* ## Dataset: 
+  - **[CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)**
 
 * ## Dependencies
   - **Keras 2 (tensorflow backend)**

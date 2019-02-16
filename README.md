@@ -7,8 +7,6 @@
 
 * ## Dataset: [CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
-  ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/celeba.png)
-
 * ## Dependencies
   - **Keras 2 (tensorflow backend)**
   - **open-cv**

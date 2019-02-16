@@ -2,5 +2,6 @@
 
 #### Keras implementation of the paper: [FaceNet: A Unified Embedding for Face Recognition and Clusterin](https://arxiv.org/abs/1503.03832)
 
+- [x] Recognize celebrities with trained FaceNet model
 - [x] Find out your Doppelgänger
 - [ ] Beauty test

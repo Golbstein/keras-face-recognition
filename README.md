@@ -15,7 +15,7 @@
   - **pandas**
   
 * ## Model
-  - Feature extractor model: DenseNet121
+  - Feature extractor model: Xception
   - Embedding model: FaceNet
   
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/openface.jpg)
@@ -24,3 +24,6 @@
 - [x] Recognize celebrities with trained FaceNet model
 - [x] Find out your Doppelgänger
 - [ ] Beauty test
+
+* ## Loss
+  **[Triplet Loss](https://towardsdatascience.com/lossless-triplet-loss-7e932f990b24)** with cosine similarity

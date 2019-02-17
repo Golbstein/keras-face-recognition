@@ -20,13 +20,13 @@
   
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/openface.jpg)
 
-  
-- [x] Recognize celebrities with trained FaceNet model
-- [x] Find out your Doppelgänger
-- [ ] Beauty test
-
 * ## Loss
   **[Triplet Loss](https://towardsdatascience.com/lossless-triplet-loss-7e932f990b24)** with cosine similarity
   
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/obama.png)
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/loss.JPG)
+  Where *f_i* is the embedding vector of image *i*
+  
+- [x] Recognize celebrities with trained FaceNet model
+- [x] Find out your Doppelgänger
+- [ ] Beauty test

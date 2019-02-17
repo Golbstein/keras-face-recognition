@@ -15,7 +15,7 @@
   - **pandas**
   
 * ## Model
-  - Feature extractor model: Xception
+  - Feature extractor model: [Xception](https://arxiv.org/pdf/1610.02357.pdf)
   - Embedding model: FaceNet
   
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/openface.jpg)

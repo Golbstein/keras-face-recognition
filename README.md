@@ -27,3 +27,5 @@
 
 * ## Loss
   **[Triplet Loss](https://towardsdatascience.com/lossless-triplet-loss-7e932f990b24)** with cosine similarity
+
+  ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/obama.png)

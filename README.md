@@ -25,6 +25,7 @@
   
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/obama.png)
   ![alt text](https://github.com/Golbstein/keras-face-recognition/blob/master/assets/loss.JPG)
+  
   Where *f_i* is the embedding vector of image *i*
   
 - [x] Recognize celebrities with trained FaceNet model

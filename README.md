@@ -7,6 +7,7 @@
 
 * ## Dataset: 
   - **[CelebA Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)**
+  - Link for downloading face images: [img_align_celeba](https://drive.google.com/file/d/0B7EVK8r0v71pZjFTYXZWM3FlRnM/view?usp=sharing)
 
 * ## Dependencies
   - **Keras 2 (tensorflow backend)**

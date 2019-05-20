@@ -1,6 +1,6 @@
 import pandas as pd
 
-def get_faces_df(PATH):
+def get_faces_df(PATH='./'):
     ''' Returns 3 data frames - for train\validation\testing '''
     
     celeb_data = pd.read_csv(PATH + 'identity_CelebA.txt', sep=" ", header=None)

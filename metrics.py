@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import backend as K
+from tensorflow.keras import backend
 
 def TripletLossAccuracy(top_n=1):
     
@@ -10,15 +10,17 @@ def TripletLossAccuracy(top_n=1):
     
     def triplet_loss_accuracy(y_true, y_pred):
         batch_size = tf.size(y_true)
-        pdist_matrix = K.sqrt(K.sum((y_pred - y_pred[:, None]) ** 2, axis=-1))
-        adjacency = K.equal(y_true, y_true[:, None])
+        pdist_matrix = backend.sqrt(backend.sum((y_pred - y_pred[:, None]) ** 2, axis=-1))
+        adjacency = tf.cast(backend.equal(y_true, y_true[:, None]), dtype=tf.float32)
+        adjacency -= tf.eye(batch_size)
+        total_positive = backend.sum(tf.cast(backend.any(adjacency, axis=-1), dtype=tf.float32))
         top_n_matches = tf.argsort(tf.where(pdist_matrix > 0, pdist_matrix, tf.ones_like(pdist_matrix) * float('inf')))[:, :top_n]
         y = tf.range(batch_size)
         tiled_y = tf.tile(y[:, None], [1, top_n])
         indices = tf.reshape(tf.transpose(tf.stack([tiled_y, top_n_matches])), (-1, 2))
-        tensor_best_n = tf.zeros(shape=(batch_size, batch_size), dtype=tf.bool)
-        tensor_best_n = tf.tensor_scatter_nd_update(tensor_best_n, indices, tf.ones(len(indices), dtype=tf.bool))
-        examples_with_positives = K.sum(tf.cast(adjacency, dtype=tf.float32), axis=-1) > 1
-        return K.mean(K.any(adjacency[examples_with_positives] & tensor_best_n[examples_with_positives], axis=-1))
+        tensor_best_n = tf.zeros(shape=(batch_size, batch_size), dtype=tf.float32)
+        tensor_best_n = tf.tensor_scatter_nd_update(tensor_best_n, indices, tf.ones(len(indices), dtype=tf.float32))
+        correct_predictions = backend.sum(tf.cast(backend.sum(adjacency * tensor_best_n, axis=-1) > 0, dtype=tf.float32))
+        return correct_predictions / (total_positive + 1e-6)
     
     return triplet_loss_accuracy

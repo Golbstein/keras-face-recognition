@@ -16,7 +16,7 @@ def TripletLossAccuracy(top_n=1):
         adjacency = tf.cast(adjacency, dtype=tf.float32)
 
         pdist_matrix = backend.sqrt(backend.sum((y_pred - y_pred[:, None]) ** 2, axis=-1))
-        total_positive = tf.math.count_nonzero(K.sum(adjacency, axis=-1) - 1, dtype=tf.float32)
+        total_positive = tf.math.count_nonzero(backend.sum(adjacency, axis=-1) - 1, dtype=tf.float32)
         top_n_matches = tf.argsort(tf.where(pdist_matrix > 0, pdist_matrix, tf.ones_like(pdist_matrix) * float('inf')))[:, :top_n]
         y = tf.range(batch_size)
         tiled_y = tf.tile(y[:, None], [1, top_n])
